@@ -9,7 +9,6 @@ sys.path.insert(0, parent_dir_path)
 from POM.tests_setup import Flights_setup
 from POM.case3 import Case3
 import HtmlTestRunner
-#// My goal to put try/except here was to pass the detailed information (array of fails) of filters option which returned wrong number of chats
 
 class Case1Test(unittest.TestCase):
     @classmethod
