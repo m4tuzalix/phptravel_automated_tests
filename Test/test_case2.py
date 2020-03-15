@@ -1,6 +1,4 @@
-from selenium import webdriver
 import unittest
-from time import sleep
 import os, sys
 from selenium import webdriver
 dir_path = os.path.dirname(os.path.realpath(__file__))
