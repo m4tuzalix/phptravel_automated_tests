@@ -1,4 +1,3 @@
-from selenium import webdriver
 import unittest
 import os, sys
 from selenium import webdriver
