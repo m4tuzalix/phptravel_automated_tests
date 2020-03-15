@@ -10,7 +10,6 @@ from POM.tests_setup import Flights_setup
 from POM.case2 import Case2
 from JavaScript.JS_CASE2 import js_flight_data
 import HtmlTestRunner
-#// My goal to put try/except here was to pass the detailed information (array of fails) of filters option which returned wrong number of chats
 
 class Case2Test(unittest.TestCase):
     @classmethod
