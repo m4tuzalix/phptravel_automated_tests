@@ -63,7 +63,7 @@ class Flights_setup():
             for x in range(len(all_passengers)):
                 current_amount = all_passengers[x].find_element_by_css_selector("input").get_attribute("value")
                 if int(current_amount) > passeners_to_set[x]:
-                    decrease_button = all_passengers[x].find_element_by_css_selector("*//button[contains(text(), '-')]")  
+                    decrease_button = all_passengers[x].find_element_by_xpath("*//button[contains(text(), '-')]")  
                     for y in range(int(current_amount)-passeners_to_set[x]):
                         decrease_button.click()
                 else:
