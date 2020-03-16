@@ -25,7 +25,6 @@ class Case2Test(unittest.TestCase):
         infant = 0 #// mumber of infant passengers
 
         setup = Flights_setup(start.driver)
-        case2 = Case2(start.driver)
         try:
             setup.click_flight_tab()
             setup.setup_the_directions()
