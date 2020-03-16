@@ -70,7 +70,6 @@ class Flights_setup():
                     increase_button = all_passengers[x].find_element_by_xpath("*//button[contains(text(), '+')]")
                     for y in range(passeners_to_set[x]-int(current_amount)):
                         increase_button.click()
-        
         except Exception as e:
             raise("Couldn't setup the passengers, "+str(e))
     
