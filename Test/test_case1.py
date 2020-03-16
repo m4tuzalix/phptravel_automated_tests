@@ -10,7 +10,7 @@ import HtmlTestRunner
 
 class Case1Test(unittest.TestCase):
     @classmethod
-    def setUp(start):
+    def setUpClass(start):
         start.driver = webdriver.Chrome("chromedriver.exe")
         start.driver.set_script_timeout(20)
         start.driver.implicitly_wait(10)
@@ -49,7 +49,7 @@ class Case1Test(unittest.TestCase):
         self.assertTrue(points)
         
     @classmethod
-    def tearDown(finish):
+    def tearDownClass(finish):
         finish.driver.quit()
 
 if __name__ == '__main__':
