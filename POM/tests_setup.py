@@ -14,6 +14,7 @@ from JavaScript.JS_setup import js_flights_tab, js_current_day, js_get_month_day
 class Flights_setup():
     def __init__(self, browser):
         self.browser = browser
+        self.browser.execute_script(js_cookie_dismiss)
 
     def click_flight_tab(self):
         try:
