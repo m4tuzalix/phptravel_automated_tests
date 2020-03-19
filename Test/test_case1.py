@@ -41,12 +41,12 @@ class Case1Test(unittest.TestCase):
     def test01_price_sorted_ascending(self):
         case = Case1(self.driver)
         sorted_correct = case.test_if_sorted_ascending()
-        self.assertTrue(sorted_correct)
+        self.assertEqual(sorted_correct, True)
 
     def test02_start_end_points(self):
         case = Case1(self.driver)
         points = case.test_start_end_points()
-        self.assertTrue(points)
+        self.assertEqual(points, True)
         
     @classmethod
     def tearDownClass(finish):
