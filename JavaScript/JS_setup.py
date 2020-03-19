@@ -53,4 +53,7 @@ js_click_day = """
     }
     click_day(day_number, second_s)
 """
-
+js_cookie_dismiss = """
+    const cookie = document.querySelector("button[class='cc-btn cc-dismiss']")
+    cookie.click()
+"""
