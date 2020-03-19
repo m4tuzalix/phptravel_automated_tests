@@ -56,7 +56,7 @@ class Case2Test(unittest.TestCase):
         correct_price = case2.test_total_price(price)
         self.assertTrue(correct_price)
 
-    def test003_booking_details(self):
+    def test03_booking_details(self):
         case2 = Case2(self.driver)
         place_from = "New York"
         place_to = "Munich"
