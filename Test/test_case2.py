@@ -41,27 +41,27 @@ class Case2Test(unittest.TestCase):
         time = self.data["main"]["flight_times"][0]
         date = self.data["main"]["flight_dates"][0]
         correct_time = case2.test_depart_date(time,date)
-        self.assertTrue(correct_time)
+        self.assertEqual(correct_time, True)
     
     def test01_arrival_time(self):
         case2 = Case2(self.driver)
         time = self.data["main"]["flight_times"][1]
         date = self.data["main"]["flight_dates"][1]
         correct_time = case2.test_arrival_time(time,date)
-        self.assertTrue(correct_time)
+        self.assertEqual(correct_time, True)
 
     def test02_total_price(self):
         case2 = Case2(self.driver)
         price = self.data["main"]["flight_price"]
         correct_price = case2.test_total_price(price)
-        self.assertTrue(correct_price)
+        self.assertEqual(correct_price, True)
 
     def test03_booking_details(self):
         case2 = Case2(self.driver)
         place_from = "New York"
         place_to = "Munich"
         correct_details = case2.test_booking_details(place_from, place_to)
-        self.assertTrue(correct_details)
+        self.assertEqual(correct_details, True)
 
     @classmethod
     def tearDownClass(finish):
