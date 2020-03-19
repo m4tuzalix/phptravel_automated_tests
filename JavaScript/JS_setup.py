@@ -34,7 +34,6 @@ js_get_month_days = """
     }
     return get_month_days(first_s)
 """
-
 js_click_day = """
     const day_number = arguments[0];
     const second_s = arguments[1];
