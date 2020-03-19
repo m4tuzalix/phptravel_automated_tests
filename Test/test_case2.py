@@ -7,7 +7,6 @@ sys.path.insert(0, parent_dir_path)
 from POM.tests_setup import Flights_setup
 from POM.case2 import Case2
 from JavaScript.JS_CASE2 import js_flight_data
-from JavaScript.JS_setup import js_cookie_dismiss
 from time import sleep
 import HtmlTestRunner
 
@@ -28,7 +27,6 @@ class Case2Test(unittest.TestCase):
 
         setup = Flights_setup(start.driver)
         try:
-            start.driver.execute_script(js_cookie_dismiss)
             setup.click_flight_tab()
             setup.setup_the_directions()
             setup.setup_depart(departure_days_to_add)
