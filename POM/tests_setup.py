@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from JavaScript.JS_setup import js_flights_tab, js_current_day, js_get_month_days, js_click_day
+from JavaScript.JS_setup import js_flights_tab, js_current_day, js_get_month_days, js_click_day, js_cookie_dismiss
 
 class Flights_setup():
     def __init__(self, browser):
