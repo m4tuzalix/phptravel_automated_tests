@@ -8,6 +8,7 @@ from POM.tests_setup import Flights_setup
 from POM.case2 import Case2
 from JavaScript.JS_CASE2 import js_flight_data
 import HtmlTestRunner
+from time import sleep
 
 class Case2Test(unittest.TestCase):
     @classmethod
@@ -32,6 +33,7 @@ class Case2Test(unittest.TestCase):
             setup.setup_passengers(adults,child,infant)
             setup.click_search()
             start.data = start.driver.execute_script(js_flight_data) #// gathers data about the flight
+            sleep(1)
             start.data["main"]["enter_button"].click() #// click the booking button
         except Exception as e:
             print(str(e))
