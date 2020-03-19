@@ -5,6 +5,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 parent_dir_path = os.path.abspath(os.path.join(dir_path, os.pardir))
 sys.path.insert(0, parent_dir_path)
 from POM.tests_setup import Flights_setup
+from JavaScript.JS_setup import js_cookie_dismiss
 from POM.case3 import Case3
 import HtmlTestRunner
 
@@ -24,6 +25,7 @@ class Case1Test(unittest.TestCase):
 
         setup = Flights_setup(start.driver)
         try:
+            start.driver.execute_script(js_cookie_dismiss)
             setup.click_flight_tab()
             setup.setup_the_directions()
             setup.setup_depart(departure_days_to_add)
