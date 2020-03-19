@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from JavaScript.JS_CASE3 import js_find_the_shortest_flight
+from time import sleep
 
 class Case3():
     def __init__(self, browser):
@@ -16,6 +17,7 @@ class Case3():
         
         one_stop = WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, one_stop))).click()
         shortest_flight = self.browser.execute_script(js_find_the_shortest_flight, flight_enter_button)
+        sleep(1)
         shortest_flight.click()
     
     def test_stops(self):
