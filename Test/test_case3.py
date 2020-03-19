@@ -35,7 +35,7 @@ class Case1Test(unittest.TestCase):
     def test00_stops(self):
         case3 = Case3(self.driver)
         stops = case3.test_stops()
-        self.assertTrue(stops)
+        self.assertEqual(stops, True)
        
     @classmethod
     def tearDown(finish):
