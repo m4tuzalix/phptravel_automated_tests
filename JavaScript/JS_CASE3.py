@@ -26,5 +26,5 @@ js_find_the_shortest_flight = """
         }
         element.click()
     }
-    return fastest_flight(first_s)
+    fastest_flight(first_s)
 """
