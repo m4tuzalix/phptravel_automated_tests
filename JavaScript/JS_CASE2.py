@@ -15,9 +15,9 @@ js_flight_data = """
             "flight_dates":Array.from(flight_dates, date => date.innerText),
             "flight_airline":flight_airline,
             "flight_price":flight_price,
-            "enter_button":enter_button
             }
         }   
+        enter_button.click()
         return main_json
     }
     return flight_data_gather()
